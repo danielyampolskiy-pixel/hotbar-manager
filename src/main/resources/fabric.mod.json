@@ -1,0 +1,30 @@
+
+{
+  "schemaVersion": 1,
+  "id": "hotbarmanager",
+  "version": "${version}",
+  "name": "Hotbar Slot Manager",
+  "description": "Automatically organizes newly received items into assigned hotbar slots.",
+  "authors": [
+    "danielyampolskiy-pixel"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.daniel.hotbar.HotbarManagerClient"
+    ],
+    "modmenu": [
+      "com.daniel.hotbar.HotbarModMenu"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
